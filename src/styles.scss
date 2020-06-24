@@ -14,7 +14,11 @@ $background-color: #fefeff;
 
 .body-background {
     background-color: $quaternary-color;
-    opacity: .4;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 5em;
+    margin-right: 5em;
+    padding: 1em;
 }
 
 .body {
@@ -22,6 +26,7 @@ $background-color: #fefeff;
     color: $primary-color;
     padding: 1em;
     min-width: 40em;
+    font-size: calc(10px + 1vmin);
 }
 
 .header {
@@ -36,16 +41,17 @@ $background-color: #fefeff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: top;
     font-size: calc(10px + 2vmin);
     color: $background-color;
 }
 
-.logo {
+.title {
     font: 200% $font-title;
     background-color: $secondary-color;
     color: $background-color;
     padding: 1em;
+    margin-top: 2em;
 }
 
 .link {
