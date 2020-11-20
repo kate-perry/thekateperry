@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Yeseva+One&display=swap");
+
+$font-title: "Yeseva One", cursive;
+$font-stack: "Lato", sans-serif;
+$primary-color: #36494e;
+$secondary-color: #fe654f;
+$tertiary-color: #7a9a68;
+$quaternary-color: #d6efff;
+$background-color: #fefeff;
+$quaternary-transparent: rgba(214, 239, 255, .8); 
+
+.app {
+  text-align: center;
+}
+
+.body-background {
+  background-color: $quaternary-transparent;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  padding: 3rem;
+}
+
+.body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  padding: 1rem;
+  min-width: 40rem;
+  font-size: calc(10px + 1vmin);
+}
+
+.header {
+  font: 100% $font-stack;
+  color: $secondary-color;
+  background: url("/monstera-left.jpg"), url("/monstera-right.jpg");
+  background-size: contain;
+  background-position: left top, right bottom;
+  background-repeat: no-repeat;
+  background: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  font-size: calc(10px + 2vmin);
+  color: $background-color;
+}
+
+.header-logo {
+  max-height: 10rem;
+}
+
+.photo {
+  max-height: 20rem;
+}
+
+.title {
+  font: 200% $font-title;
+  background-color: $secondary-color;
+  color: $background-color;
+  padding: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.link {
+  font: 100% $font-stack;
+  color: $tertiary-color;
+}
+
+.space {
+  &--s {
+    height: 0.25rem;
+  }
+  &--m {
+    height: 0.5rem;
+  }
+  &--l {
+    height: 1rem;
+  }
+  &--xl {
+    height: 2rem;
+  }
+}
