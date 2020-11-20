@@ -18,6 +18,11 @@ class Home extends Component {
             </Typography>
             <Typography variant="h5">It's nice to meet you!</Typography>
           </div>
+          <img
+            src={photo}
+            className="photo"
+            alt="Kate Perry in front of Atlanta skyline"
+          />
           <div className="body-background">
             <Typography color="textPrimary">
               I am an IT professional with over 3 years of experience bringing
@@ -27,11 +32,6 @@ class Home extends Component {
               possibility to business and product analysis.
             </Typography>
             <div className="space--xl" />
-            <img
-              src={photo}
-              className="photo"
-              alt="Kate Perry in front of Atlanta skyline"
-            />
             <div className="space--xl" />
             <EducationCard />
           </div>
