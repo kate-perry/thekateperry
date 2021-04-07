@@ -7,7 +7,7 @@ export const education = {
     dateSpan: ['2013', '2017'],
     major: 'Management Information Systems',
     minor: 'French',
-    specializations: ['Management Communications', 'Business Information Technology']
+    specializations: 'Management Communications, Business Information Technology'
 }
 export const experience = [
     {

@@ -1,9 +1,16 @@
 import React, { Component } from "react";
 import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
+import Divider from "@material-ui/core/Divider";
 import EducationCard from "../features/EducationCard";
 import photo from "../shared/static/atlantacropped.jpg";
 import logo from "../shared/static/logo.png";
 import "../shared/styles/styles.scss";
+import {
+  tagline1,
+  tagline2,
+  aboutMe
+} from '../shared/utils/strings'
 
 class Home extends Component {
   render() {
@@ -11,30 +18,31 @@ class Home extends Component {
       <div className="app">
         <header className="header">
           <img src={logo} className="header-logo" alt="The Kate Perry logo" />
-          <div className="space--m" />
-          <div className="title">
-            <Typography variant="h5">
-              Atlanta-based tech fanatic making leading-edge solutions reality.
+          <div className="tagline">
+            <Typography variant="h5" color="primary">
+              {tagline1}
             </Typography>
-            <Typography variant="h5">It's nice to meet you!</Typography>
+            <div className="space--l" />
+            <Typography variant="h6">{tagline2}</Typography>
           </div>
+          <div className="space--l" />
           <img
             src={photo}
             className="photo"
             alt="Kate Perry in front of Atlanta skyline"
           />
+          <div className="space--xl" />
           <div className="body-background">
             <Typography color="textPrimary">
-              I am an IT professional with over 3 years of experience bringing
-              solutions to reality. I’ve held a wide range of roles in a variety
-              of industries, and with my diverse background in the development
-              lifecycle, I bring an innovative perspective framed with technical
-              possibility to business and product analysis.
+              {aboutMe}
             </Typography>
-            <div className="space--xl" />
-            <div className="space--xl" />
-            <EducationCard />
+            <div className="space--l" />
+            <Button variant="contained" color="primary">Find out more!</Button>
           </div>
+          <div className="space--l" />
+          <Divider style={{color:"#000000"}} variant="middle" />
+          <div className="space--l" />
+          <EducationCard />
         </header>
       </div>
     );

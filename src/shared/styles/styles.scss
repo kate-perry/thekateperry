@@ -15,29 +15,28 @@ $quaternary-transparent: rgba(214, 239, 255, .8);
 
 .body-background {
   background-color: $quaternary-transparent;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  padding: 3rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  padding: 2rem;
 }
 
 .body {
   font: 100% $font-stack;
   color: $primary-color;
-  padding: 1rem;
-  min-width: 40rem;
   font-size: calc(10px + 1vmin);
+  margin-left: 10rem;
+  margin-right: 10rem;
+  padding: 2rem;
 }
 
 .header {
   font: 100% $font-stack;
   color: $secondary-color;
-  background: url("/monstera-left.jpg"), url("/monstera-right.jpg");
-  background-size: contain;
-  background-position: left top, right bottom;
-  background-repeat: no-repeat;
-  background: cover;
+  // background: url("/monstera-left.jpg"), url("/monstera-right.jpg");
+  // background-size: contain;
+  // background-position: left top, right bottom;
+  // background-repeat: no-repeat;
+  // background: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -48,7 +47,11 @@ $quaternary-transparent: rgba(214, 239, 255, .8);
 }
 
 .header-logo {
-  max-height: 10rem;
+  max-height: 25rem;
+}
+
+.small-logo {
+  max-height: 5rem;
 }
 
 .photo {
@@ -59,9 +62,16 @@ $quaternary-transparent: rgba(214, 239, 255, .8);
   font: 200% $font-title;
   background-color: $secondary-color;
   color: $background-color;
-  padding: 2rem;
+  padding: 1rem;
   margin-top: 1rem;
   margin-bottom: 2rem;
+}
+
+.tagline {
+  font: 200% $font-title;
+  color: $primary-color;
+  padding: 1rem;
+  margin-top: 1rem;
 }
 
 .link {

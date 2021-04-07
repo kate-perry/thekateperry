@@ -1,20 +1,24 @@
 import React, { Component } from "react";
 import "../shared/styles/styles.scss";
 import Typography from "@material-ui/core/Typography";
+import {
+  education
+} from '../shared/utils/strings'
 
 class ExperienceCard extends Component {
   render() {
     return (
-      <>
-        <Typography variant="h6" color="textPrimary">Education</Typography>
-        <Typography color="textPrimary"><strong>The University of Alabama</strong></Typography>
-        <Typography color="textPrimary">Bachelor of Science in Commerce and Business Administration</Typography>
-        <Typography color="textPrimary">2013 - 2017</Typography>
+      <div className="body">
+        <Typography variant="h5" color="primary">Education</Typography>
+        <div className="space--m" />
+        <Typography variant="body1" color="textPrimary"><strong>{education.institutionName}</strong></Typography>
+        <Typography variant="body1" color="textPrimary">{education.degree}</Typography>
+        <Typography variant="body2" color="textPrimary">{education.dateSpan[0]} - {education.dateSpan[1]}</Typography>
         <div className="space--l" />
-        <Typography color="textPrimary">Major: <strong>Management Information Systems</strong></Typography>
-        <Typography color="textPrimary">Minor: <strong>French</strong></Typography>
-        <Typography color="textPrimary">Specializations: <strong>Management Communications, Business Information Technology</strong></Typography>
-      </>
+        <Typography variant="body2" color="textPrimary"><em>Major - </em><strong>{education.major}</strong></Typography>
+        <Typography variant="body2" color="textPrimary"><em>Specializations - </em>{education.specializations}</Typography>
+        <Typography variant="body2" color="textPrimary"><em>Minor - </em>{education.minor}</Typography>
+      </div>
     );
   }
 }
